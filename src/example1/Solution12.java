@@ -23,7 +23,7 @@ public class Solution12 {
     );
 
     public String intToRoman(int num) {
-        StringBuilder result = new StringBuilder();
+        var result = new StringBuilder();
 
         var position = -1;
         while (num > 0) {
