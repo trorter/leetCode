@@ -31,10 +31,10 @@ public class Solution1197 {
         record Cell(int x, int y) {}
 
         var stack = new ArrayDeque<Cell>();
-        var traveledPath = new HashSet<Cell>();
+        var memo = new boolean[1_000][1_000];
 
         stack.push(new Cell(0,0));
-        traveledPath.add(new Cell(0, 0));
+        memo[500][500] = true;
 
         var count = 1;
         while (true) {
@@ -51,6 +51,12 @@ public class Solution1197 {
                         return count;
                     }
 
+                    //if already been here
+                    if (memo[500 + nextX][500 + nextY]) {
+                        continue;
+                    }
+                    memo[500 + nextX][500 + nextY] = true;
+
                     //if too far
                     if (Math.abs(nextX - x) > 10 && Math.abs(cell.x - x) < Math.abs(nextX - x) ) {
                         continue;
@@ -59,12 +65,7 @@ public class Solution1197 {
                         continue;
                     }
 
-                    //if already been here
                     var nextCell = new Cell(nextX, nextY);
-                    if (traveledPath.contains(nextCell)) {
-                        continue;
-                    }
-                    traveledPath.add(nextCell);
                     newStack.add(nextCell);
                 }
             }
