@@ -32,7 +32,7 @@ const suggestedProducts = function(products, searchWord) {
         }
     }
 
-    return result
+    return  result
 };
 
 console.log(suggestedProducts(["mobile","mouse","moneypot","monitor","mousepad"], "mouse"))
