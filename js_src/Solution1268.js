@@ -22,7 +22,7 @@ const suggestedProducts = function(products, searchWord) {
 
     const result = Array.from(Array(searchWord.length), () => [])
 
-    for (product of products) {
+    for (let product of products) {
         const prefixLength = findCommonPrefix(product, searchWord)
 
         for (let i = 0; i < prefixLength; i++) {
