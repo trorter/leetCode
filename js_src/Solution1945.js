@@ -11,9 +11,8 @@ const getLucky = function(s, k) {
 
   let tmp = 0
   for (let i = 0; i < k; i++) {
-    while (0 < num.length) {
-      tmp += +num[num.length - 1]
-      num = num.substring(0, num.length - 1)
+    for (let j = num.length - 1; 0 <= j; j-- ) {
+      tmp += +num[j]
     }
 
     num = '' + tmp
@@ -22,5 +21,3 @@ const getLucky = function(s, k) {
 
   return +num
 }
-
-console.log(getLucky("dbvmfhnttvr", 5))
