@@ -10,7 +10,7 @@ const diagonalSum = (mat) => {
       sum += mat[mat.length -1 - i][i]
     }
   }
-  return  sum
+  return sum
 }
 
 const mat = [[7,3,1,9],[3,4,6,9],[6,9,6,6],[9,5,8,5]]
