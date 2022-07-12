@@ -1,4 +1,4 @@
-const myAtoi = (s: string): number => {
+const myAtoi  = (s: string): number => {
   let i: number = 0
   let num: number = 0
   let sign: number = 1
