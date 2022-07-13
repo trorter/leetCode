@@ -25,3 +25,5 @@ const jump = (nums: number[]): number => {
 
   return jumps + 1
 }
+
+export {}

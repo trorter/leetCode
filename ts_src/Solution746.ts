@@ -10,3 +10,5 @@ const minCostClimbingStairs = (cost: number[]): number => {
 
   return array[array.length - 1]
 }
+
+export {}

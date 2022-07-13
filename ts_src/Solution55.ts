@@ -7,3 +7,5 @@ const canJump = (nums: number[]): boolean => {
 
   return nums.length <= maxJump + 1
 }
+
+export {}

@@ -19,3 +19,5 @@ const canReach = (arr: number[], start: number): boolean => {
 
   return dfs(start)
 }
+
+export {}

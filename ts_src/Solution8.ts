@@ -21,3 +21,5 @@ const  myAtoi  = (s: string): number => {
 
   return num <= min ? min : max <= num ? max : num
 }
+
+export{}
