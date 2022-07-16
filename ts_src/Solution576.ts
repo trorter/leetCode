@@ -43,9 +43,9 @@ const findPaths = (m: number, n: number, maxMove: number, startRow: number, star
     const nextQueue: Array<TakenCell> = []
 
     for (let cell of queue) {
-      for (let i = 0; i < dirs.length; i++) {
-        const nextX = cell.x + dirs[i].x
-        const nextY = cell.y + dirs[i].y
+      for (let dir of dirs) {
+        const nextX = cell.x + dir.x
+        const nextY = cell.y + dir.y
 
         if (nextX < 0 || nextY < 0 || m === nextX || n === nextY) {
           resultCounter = (resultCounter + cell.counter) % modulo
