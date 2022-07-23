@@ -47,3 +47,5 @@ const rightSideView = (root: TreeNode | null): number[] => {
 
   return result
 }
+
+export {}

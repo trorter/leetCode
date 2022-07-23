@@ -7,3 +7,5 @@ const topKFrequent = (nums: Array<number>, k: number): Array<number> => {
 
     return [...map.entries()].sort((a, b) => b[1] - a[1]).slice(0, k).map(a => a[0])
 }
+
+export {}

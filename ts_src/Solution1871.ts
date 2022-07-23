@@ -32,3 +32,5 @@ const canReach1 = (s: string, minJump: number, maxJump: number): boolean => {
 
   return false
 }
+
+export {}
